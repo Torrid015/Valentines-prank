@@ -29,6 +29,8 @@ body {
 
 .container {
   position: relative;
+  max-width: 300px;
+  overflow: hidden;
 }
 
 button {

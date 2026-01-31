@@ -22,15 +22,11 @@ noBtn.addEventListener("mouseover", () => {
   // Update text
   question.textContent = texts[Math.min(attempts - 1, texts.length - 1)];
 
-  // Move button randomly and scale it (avoid overlapping YES button)
+  // Move button randomly and scale it (avoid overlapping YES button, constrained for mobile)
   const x =
-    Math.random() > 0.5 ?
-      Math.random() * 150 + 100
-    : -(Math.random() * 150 + 100);
+    Math.random() > 0.5 ? Math.random() * 80 + 50 : -(Math.random() * 80 + 50);
   const y =
-    Math.random() > 0.5 ?
-      Math.random() * 150 + 100
-    : -(Math.random() * 150 + 100);
+    Math.random() > 0.5 ? Math.random() * 80 + 50 : -(Math.random() * 80 + 50);
   const noScale = Math.max(0.3, 1 - attempts * 0.15);
   noBtn.style.transform = `translate(${x}px, ${y}px) scale(${noScale})`;
 
@@ -63,15 +59,11 @@ noBtn.addEventListener("touchstart", () => {
   // Update text
   question.textContent = texts[Math.min(attempts - 1, texts.length - 1)];
 
-  // Move button randomly and scale it (avoid overlapping YES button)
+  // Move button randomly and scale it (avoid overlapping YES button, constrained for mobile)
   const x =
-    Math.random() > 0.5 ?
-      Math.random() * 150 + 100
-    : -(Math.random() * 150 + 100);
+    Math.random() > 0.5 ? Math.random() * 80 + 50 : -(Math.random() * 80 + 50);
   const y =
-    Math.random() > 0.5 ?
-      Math.random() * 150 + 100
-    : -(Math.random() * 150 + 100);
+    Math.random() > 0.5 ? Math.random() * 80 + 50 : -(Math.random() * 80 + 50);
   const noScale = Math.max(0.3, 1 - attempts * 0.15);
   noBtn.style.transform = `translate(${x}px, ${y}px) scale(${noScale})`;
 

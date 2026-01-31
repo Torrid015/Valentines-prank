@@ -29,8 +29,8 @@ body {
 
 .container {
   position: relative;
-  max-width: 300px;
-  overflow: hidden;
+  display: flex;
+  gap: 20px;
 }
 
 button {
@@ -49,6 +49,5 @@ button {
 
 #noBtn {
   background: #e0e0e0;
-  position: absolute;
-  left: 120px;
+  position: relative;
 }
